@@ -4,15 +4,15 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.views.generic.base import TemplateView
 from shwipe.views import *
+admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^accounts/', include('allauth.urls')),
+    url(r'^accounts/profile/$', TemplateView.as_view(template_name='profile.html')),
     (r'^accounts/', include('allauth.urls')),
     #url(r'^$', 'shwipe.views.home', name='home'),
-    #url(r'^accounts/', include('allauth.urls')),
-    url(r'^accounts/', include('allauth.urls')),
     url(r'^$', ProductListView.as_view(), name='product-list'),
 ) 
 
