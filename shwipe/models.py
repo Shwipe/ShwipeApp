@@ -14,6 +14,7 @@ class Product(models.Model):
     def __str__(self):
         return unicode(self.name)
 
-class Shwiper(models.Model):
+class Shwipe(models.Model):
     user = models.OneToOneField(User)
     product = models.ForeignKey(Product)
+    direction = models.CharField(max_length=100, choices=(('Left', 'Left'),('Right', 'Right')))
