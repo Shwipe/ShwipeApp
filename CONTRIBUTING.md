@@ -1,6 +1,6 @@
 
-# Contributing to Starseed
-Issues for Starseed should be submitted to https://github.com/NewSpaceNYC/Starseed/issues
+# Contributing to shwipe
+Issues for shwipe should be submitted to https://github.com/NewSpaceNYC/shwipe/issues
 
 ## Security Issues
 ***Any security issues should be submitted directly to [all@newspace.nyc](mailto:all@newspace.nyc)***
@@ -11,9 +11,9 @@ Issues for Starseed should be submitted to https://github.com/NewSpaceNYC/Starse
 - What steps are required to reproduce the issue
 - An example build that shows the issue
 
-## Submitting a PR to Starseed
+## Submitting a PR to shwipe
 
-See testing and setup notes in the base [README](https://github.com/NewSpaceNYC/Starseed/)
+See testing and setup notes in the base [README](https://github.com/NewSpaceNYC/shwipe/)
 
 We live code this project together at: 
 - https://www.livecoding.tv/codedoc/

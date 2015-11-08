@@ -3,7 +3,7 @@
 ### Getting Setup
 We use ZenHub.io's Chrome Extension for GitHub.com for our Agile board. 
 1. Install it here: https://www.zenhub.io/
-1. Then go to https://github.com/NewSpaceNYC/starseed#boards
+1. Then go to https://github.com/NewSpaceNYC/shwipe#boards
 
 ###  Today we'll focus on:
    - Finalizing the MVP scope of the project, see ROADMAP.md
@@ -14,7 +14,7 @@ We use ZenHub.io's Chrome Extension for GitHub.com for our Agile board.
 
 
 ----done---
- -  we may not need the website app. and use starseed "app" (done)
+ -  we may not need the website app. and use shwipe "app" (done)
  -  get some static files uploaded (done)
  -  create a logo (done)
  -  lets create an application (done) sort of... we're using the startseed app:

@@ -1,8 +1,8 @@
-# Welcome to the StarSeed project.
-https://github.com/NewSpaceNYC/starseed.git
+# Welcome to the shwipe project.
+https://github.com/NewSpaceNYC/shwipe.git
 
 Waffle.io Task-Cards
-[![Stories in Ready](https://badge.waffle.io/NewSpaceNYC/Starseed.png?label=ready&title=Ready)](https://waffle.io/NewSpaceNYC/Starseed)
+[![Stories in Ready](https://badge.waffle.io/NewSpaceNYC/shwipe.png?label=ready&title=Ready)](https://waffle.io/NewSpaceNYC/shwipe)
 
 A project that aims to be a whitelabel assmebly.com (for all types of projects that can effectively leverage bounties)
 no lock in... etc... check this document for high level outline: 
@@ -12,8 +12,8 @@ You may also want to follow the Django tutorial to create your first application
 https://docs.djangoproject.com/en/1.7/intro/tutorial01/
 
 Also see:
- - [CONTRIBUTING.md](https://github.com/NewSpaceNYC/starseed/blob/master/CONTRIBUTING.md)
- - [TODO.md](https://github.com/NewSpaceNYC/starseed/blob/master/TODO.md)
+ - [CONTRIBUTING.md](https://github.com/NewSpaceNYC/shwipe/blob/master/CONTRIBUTING.md)
+ - [TODO.md](https://github.com/NewSpaceNYC/shwipe/blob/master/TODO.md)
 
 ### Future plans:
  - livecoding_stream :) (probably anyways to make it open and as a Google Hangouts addon)

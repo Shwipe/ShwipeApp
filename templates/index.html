@@ -1,42 +1,9 @@
 {% extends "base.html" %}
 {% load bootstrap3 %}
 {% load staticfiles %}
-{% block title %}StarSeed - Equity Sharing Product Platform{% endblock %}
+{% block title %}shwipe - Equity Sharing Product Platform{% endblock %}
 {% block content %}
 
-<div class="row" style="text-align:center;">
-	</br>
-	<div class="home-card">
-		</br>
+{% include "cards.html" %} <!-- https://docs.djangoproject.com/en/1.8/ref/templates/builtins/#include -->
 
-		<video autoplay loop poster="{% static 'purple-nebula.jpg' %}" id="bgvid">
-			<source src="https://826fc79f49996b1370f534ef1d6b64b55462af1b.googledrive.com/host/0B9LVk4xbDIJTanZTSzZONEhoSzg" type="video/mp4">
-		</video>
-
-		<img src="{% static "logo-trans.png" %}">
-		</br></br>
-		<p class="slogan">Starseed is an equity-crowdfunding skill-sharing product-innovation platform.</p>
-		</br>
-	
-		{% buttons %}
-		<a href="/product">
-			<button type="submit" class="btn btn-primary">
-	      		{% bootstrap_icon "star" %} Start a Product
-	    	</button>
-	    	</a>
-	    			<a href="/accounts/signup">
-			<button type="submit" class="btn btn-primary">
-	      		{% bootstrap_icon "user" %} Sign Up
-	    	</button>
-	    	</a>
-	    			<a href="/accounts/login">
-			<button type="submit" class="btn btn-primary">
-	      		{% bootstrap_icon "log-in" %} Sign In
-	    	</button>
-	    	</a>
-		{% endbuttons %}
-		<p class="github-slogan">And we're open source! <i class="fa fa-github-alt"></i> </p>
-		</br></br>
-	</div>
-</div>
 {% endblock %}

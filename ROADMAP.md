@@ -10,7 +10,7 @@ From Google Doc Brainstorm: http://goo.gl/WTH2tm
   - for example, let’s say a company wants to sell some of it’s shares, it does so on the platform either by selling unvested shares or making a board-member decision to dilute shares and sell them. 
    this way you could also offer a kickstarter and/or Gust type fundraising campaign where people can contribute to the project simply with their money contribution(s).
  - equity for ideamen
-  - Submit ideas to Starseed and let the community manage it's development
+  - Submit ideas to shwipe and let the community manage it's development
  - No equity down
   - Use the platform for free, no commitments, insert cash or equity per bounty as needed. We act as the trusty escrow to your bounty hunters. 
 
@@ -43,7 +43,7 @@ From Google Doc Brainstorm: http://goo.gl/WTH2tm
 
 ### collaboration % bounty sharing
  - We want to live-code all the things so,
- - If two or more people are working on a bounty, they can, and at Starseed.com it shows in real-time who's working on which bounty
+ - If two or more people are working on a bounty, they can, and at shwipe.com it shows in real-time who's working on which bounty
  - We then give contributors a UI to democratically self-divvy up the loot
  
 

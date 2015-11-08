@@ -8,11 +8,11 @@ Postgres in Cloud 9:
  - http://stackoverflow.com/questions/11919391/postgresql-error-fatal-role-username-does-not-exist
  - `$ sudo -u postgres -i` or `sudo sudo -u postgres psql` <-- use this one in C9
  - `$ sudo -s` then `sudo -u postgres psql` or `sudo su - postgres`
- - `$ createuser -d -P -s starseed`
- - `$ createdb -O starseed starseeddb`
+ - `$ createuser -d -P -s shwipe`
+ - `$ createdb -O shwipe shwipedb`
  - Run Postgres Server `$ sudo service postgresql start` 
  - Set Postgres User `pg_hba.conf`: http://stackoverflow.com/a/18664239/1762493
- - Log into db `psql -Ustarseed -dstarseeddb -W`
+ - Log into db `psql -Ushwipe -dshwipedb -W`
  
 PSQL Commands
  - `DROP DATABASE [ IF EXISTS ] name` http://www.postgresql.org/docs/8.2/static/sql-dropdatabase.html

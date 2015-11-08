@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+      
+        <div id="viewport">
+            <ul class="stack">
+            {% for product in products %}
+                <li style="background:url({{ product.image }}) center no-repeat"><a href="/products/{{ product.id }}/">{{ product.name }}</a></li>
+                {% empty %}
+                    <li class="diamonds">?</li>
+            {% endfor %}
+            </ul>
+        </div>
+
+{% endblock %}

@@ -1,1 +1,1 @@
-web: gunicorn starseed.wsgi --log-file -
+web: gunicorn shwipe.wsgi --log-file -

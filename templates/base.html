@@ -3,38 +3,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
-    <link rel="stylesheet" href="{% static "style.css" %}">
-    <style>
-    body {
-        bgcolor: black;
-        background-size:auto 500%;                   /* <------ */
-        background-repeat: no-repeat;
-        background-position: center center;            /* optionally, center the image */
-    }
-    
-    video#bgvid {
-    position: fixed; right: 0; bottom: 0;
-    min-width: 100%; min-height: 100%;
-    width: auto; height: auto; z-index: -100;
-    background: url({% static 'purple-nebula.jpg' %}) no-repeat;
-    background-size: cover;
-    }
-    </style>
-    {% load bootstrap3 %}
+    <meta charset="utf-8">
 
-    {# Load CSS and JavaScript #}
-    {% bootstrap_css %}
-    {% bootstrap_javascript %}
-    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'card-stack.css' %}">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/swing/3.0.2/swing.js"></script>
+    <script src="{% static 'card-stack.js' %}"></script>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-<div class="container" style="margin:0 auto; text-align: center;">
-	{% block content %} {% endblock %}
+    
+    <!-- Simple header with fixed tabs. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">
+      <img class="logo-svg" src="https://2b274efb27e3b014ef6182fece811cdd54455851.googledrive.com/host/0B5JJC6KspfT3YXk0QmtZSU53WTg" alt="Shwipe logo"/>
+      </span>
+    </div>
+    <!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Tab 1</a>
+      <a href="#fixed-tab-2" class="mdl-layout__tab">Tab 2</a>
+      <a href="#fixed-tab-3" class="mdl-layout__tab">Tab 3</a>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">
+        <img class="drawer-logo-svg" src="https://2b274efb27e3b014ef6182fece811cdd54455851.googledrive.com/host/0B5JJC6KspfT3YXk0QmtZSU53WTg" alt="Shwipe logo"/>
+    </span>
+  </div>
+  <main class="mdl-layout__content">
+      
+    <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+      <div class="page-content">
+        
+      </div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+      <div class="page-content"><!-- Content goes here -->
+      
+          	{% block content %} {% endblock %}
+      
+      </div>
+    </section>
+  </main>
 </div>
+
 </body>
 </html>
