@@ -1,10 +1,11 @@
 from django.contrib import admin
 from shwipe.models import Product
-
+from shwipe.models import Shwiper
 from django.contrib.auth.models import User
 
 
 admin.site.register(Product)
+admin.site.register(Shwiper)
 
 """ Example admin.py
 from django.contrib import admin

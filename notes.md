@@ -33,6 +33,7 @@ Using chromedriver Using PhantomJS in AWS
 
 Django Notes
  - Django AllAuth http://django-allauth.readthedocs.org/en/latest/
+ - Extending user model https://docs.djangoproject.com/en/1.8/topics/auth/customizing/
 
 
 C9 Notes
