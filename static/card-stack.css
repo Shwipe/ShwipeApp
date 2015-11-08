@@ -32,20 +32,20 @@ input {
 }
 
 #viewport li {
-    width: 222px; height: 310px; list-style: none; background: #fff; border-radius: 5px; position: absolute; top: 0; left: 0; box-shadow: 0 0 2px rgba(0,0,0,.2), 1px 1px 1px rgba(0,0,0,.2); line-height: 517px; text-align: center; font-size: 33px; border: 10px solid #ECECEC; box-sizing: border-box; cursor: default;
+    width: 222px; height: 310px; list-style: none; background: #fff; border-radius: 5px; position: absolute; top: 0; left: 0; box-shadow: 0 0 2px rgba(0,0,0,.2), 1px 1px 1px rgba(0,0,0,.2); line-height: 517px; text-align: center; font-size: 33px; border: 10px solid #ECECEC; box-sizing: border-box; cursor: -webkit-grab; cursor: -moz-grab;
 }
     #viewport li a {
         background: #ECECEC;
-        padding: 14px 6px 1px 6px;
+        padding: 23px 6px 1px 6px;
         font-size: 17px;
         color: #000;
         text-decoration: none;
-        width: 190px;
+        width: 211px;
         display: inline-block;
-        height: 19px;
+        height: 32px;
         vertical-align: middle;
-        margin: 0 0 -23px 0;
-        line-height: 17px;
+        margin: -8px 0 -33px -1px;
+        line-height: 0px;
         letter-spacing: 1px;
     }
 

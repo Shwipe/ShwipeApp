@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var stack;
+    var stack,
+    card;
 
     stack = gajus.Swing.Stack();
 
@@ -20,4 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         e.target.classList.add('in-deck');
     });
+    
+    //card = stack.createCard(HTMLElement);
+  
+    /*card.on('throwleft', function () {});
+    card.on('throwright', function () {});*/
+    
 });

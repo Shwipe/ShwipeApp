@@ -1,16 +1,33 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-      
-        <div id="viewport">
-            <ul class="stack">
-            {% for product in products %}
-                <li style="background:url({{ product.image }}) center no-repeat"><a href="/products/{{ product.id }}/">{{ product.name }}</a></li>
-                {% empty %}
-                    <li class="diamonds">?</li>
-            {% endfor %}
-            </ul>
-        </div>
+    
+  
+    <div id="viewport">
+        <ul class="stack">
+        {% for product in products %}
+            <li style="background:url({{ product.image }}) center no-repeat"><a href="/products/{{ product.id }}/">{{ product.name }}</a></li>
+            {% empty %}
+                <li class="diamonds">?</li>
+        {% endfor %} 
+        </ul>
+    </div>
+    
+    <div>
+        <!-- Accent-colored raised button with ripple -->
+    	<button class="purchase-btn w-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+    	  <i class="material-icons">lock</i> Purchase
+    	</button>
+    	<sub class="mastercard-sub">
+    	    Payments processesing by 
+    	    <img class="mastercard-sub-img" src="https://096af4ad4af9d5261781e04d982f48dd361a8e21.googledrive.com/host/0B5JJC6KspfT3UFphbkx6Wkw1MWM" alt="MasterCard">
+    	</sub>
+	</div>
+		
+    <form action="/shwipe/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit" />
+    </form>
 
 {% endblock %}

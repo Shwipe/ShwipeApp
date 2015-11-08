@@ -15,6 +15,17 @@
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     
@@ -25,36 +36,44 @@
     <div class="mdl-layout__header-row">
       <!-- Title -->
       <span class="mdl-layout-title">
-      <img class="logo-svg" src="https://2b274efb27e3b014ef6182fece811cdd54455851.googledrive.com/host/0B5JJC6KspfT3YXk0QmtZSU53WTg" alt="Shwipe logo"/>
+      <a href="/">
+        <img class="logo-svg" src="https://9d4641a993fce16a620893b51b7c73c138cd7f55.googledrive.com/host/0B5JJC6KspfT3ZzllR3Q0ZTd4S1U" alt="Shwipe logo"/>
+      </a>
       </span>
     </div>
     <!-- Tabs -->
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Tab 1</a>
-      <a href="#fixed-tab-2" class="mdl-layout__tab">Tab 2</a>
-      <a href="#fixed-tab-3" class="mdl-layout__tab">Tab 3</a>
+      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Free People</a>
+      <a href="#fixed-tab-2" class="mdl-layout__tab">Amazon</a>
+      <a href="#fixed-tab-3" class="mdl-layout__tab">Best Buy</a>
     </div>
   </header>
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">
-        <img class="drawer-logo-svg" src="https://2b274efb27e3b014ef6182fece811cdd54455851.googledrive.com/host/0B5JJC6KspfT3YXk0QmtZSU53WTg" alt="Shwipe logo"/>
+        <a href="/">
+          <img class="drawer-logo-svg" src="https://9d4641a993fce16a620893b51b7c73c138cd7f55.googledrive.com/host/0B5JJC6KspfT3ZzllR3Q0ZTd4S1U" alt="Shwipe logo"/>
+        </a>
     </span>
+    <a href="accounts/profile"> My Profile </a>
+    {% include "search.html" %}
+    {% include "categories.html" %}
   </div>
   <main class="mdl-layout__content">
       
     <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
-      <div class="page-content"><!-- Your content goes here --></div>
+      <div class="page-content">
+        <!-- Your content goes here -->
+        {% block content %} {% endblock %}
+      </div>
     </section>
     <section class="mdl-layout__tab-panel" id="fixed-tab-2">
       <div class="page-content">
-        
+        <!-- Your content goes here -->
       </div>
     </section>
     <section class="mdl-layout__tab-panel" id="fixed-tab-3">
-      <div class="page-content"><!-- Content goes here -->
-      
-          	{% block content %} {% endblock %}
-      
+      <div class="page-content">
+        <!-- Your content goes here -->
       </div>
     </section>
   </main>

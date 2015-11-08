@@ -14,6 +14,15 @@ from suit.widgets import SuitDateWidget, SuitTimeWidget, SuitSplitDateTimeWidget
 #             'date_joined': SuitSplitDateTimeWidget,
 #         }
 
+class ShwipeForm(ModelForm):
+    user = forms.CharField(max_length=255)
+    product = forms.CharField(max_length=255)
+    direction = forms.ChoiceField()
+    
+    class Meta:
+        model = User
+        fields = "__all__"
+
 
 """ Notes
 

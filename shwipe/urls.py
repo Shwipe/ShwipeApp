@@ -11,6 +11,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^accounts/profile/$', TemplateView.as_view(template_name='profile.html')),
+    url(r'^shwipe/$', GetShwipeView.as_view(template_name='shwipe.html')),
     (r'^accounts/', include('allauth.urls')),
     #url(r'^$', 'shwipe.views.home', name='home'),
     url(r'^$', ProductListView.as_view(), name='product-list'),

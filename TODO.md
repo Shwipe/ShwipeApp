@@ -1,28 +1,7 @@
 #  TODO 
 
-### Getting Setup
-We use ZenHub.io's Chrome Extension for GitHub.com for our Agile board. 
-1. Install it here: https://www.zenhub.io/
-1. Then go to https://github.com/NewSpaceNYC/shwipe#boards
+http://pythoncentral.io/using-python-django-modelform-first-django-application/
 
-###  Today we'll focus on:
-   - Finalizing the MVP scope of the project, see ROADMAP.md
-   - Get MVP models coded (in progress) Mike / Sean
-   - Get MVP views coded (in progress) Yusuf / Sean
-   - 
-   
+http://stackoverflow.com/questions/10745177/building-a-mobile-app-with-jquery-mobile-django-and-phonegap
 
-
-----done---
- -  we may not need the website app. and use shwipe "app" (done)
- -  get some static files uploaded (done)
- -  create a logo (done)
- -  lets create an application (done) sort of... we're using the startseed app:
- -  add Yusuf (done)
-
-
-###  NOTES
- -   look to https://github.com/assemblymade/meta for inspiration
- -   start from scratch, build the best features
- -   we have some ideas will share
- -   define code tasks we can work on
+http://stackoverflow.com/questions/18620711/phonegap-with-django-backend

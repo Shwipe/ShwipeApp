@@ -21,3 +21,21 @@ body{
 .mdl-layout__tab-bar{
   background:#e0e0e0 !important;
 }
+a.mdl-layout__tab:hover{
+  color:#d9534f;
+  text-decoration:none;
+}
+ 
+.purchase-btn{
+  background: #f0ad4e !important;
+  margin: -33px auto auto;
+  display: block !important;
+}
+  .mastercard-sub{
+    margin: 13px auto;
+    text-align: center;
+    display: block;
+  }
+  .mastercard-sub-img{
+    width: 33px;
+  }

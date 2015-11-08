@@ -1,7 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Profile</h1>
 
-<p>Your profile</p>
+    <h1>Profile</h1>
+    
+    <p>Your profile</p>
+    
+    <h3>Your Payment Details</h3>
+
+    {% include 'paymentForm.html' %}
+
 {% endblock %}
